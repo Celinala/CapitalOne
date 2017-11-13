@@ -94,11 +94,11 @@ article {
 
 
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb9StUkkVmmiAlxhMbnBn0_0a295repDM&callback=myMap"></script>
+
 <article>
 <h2>San Francisco's Neighborhoods</h2>
 </article>
-<p id="map">Click the button to get your position.</p>
+<p id="map">Click the button to get your current position.</p>
 
 <button onclick="getLocation()">Try It</button>
 
@@ -121,6 +121,7 @@ function showPosition(position) {
     +latlon+"&zoom=14&size=400x300&key=AIzaSyDb9StUkkVmmiAlxhMbnBn0_0a295repDM";
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
 }
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb9StUkkVmmiAlxhMbnBn0_0a295repDM&callback=myMap"></script>
 
 function showError(error) {
     switch(error.code) {
