@@ -109,37 +109,58 @@ var mapOptions = {
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb9StUkkVmmiAlxhMbnBn0_0a295repDM&callback=myMap"></script>
 </p>
 
-<ul class="bar-graph">
-  <li class="bar-graph-axis">
-    <div class="bar-graph-label">100%</div>
-    <div class="bar-graph-label">80%</div>
-    <div class="bar-graph-label">60%</div>
-    <div class="bar-graph-label">40%</div>
-    <div class="bar-graph-label">20%</div>
-    <div class="bar-graph-label">0%</div>
-  </li>
-  <li class="bar primary" style="height: 95%;" title="95">
-    <div class="percent">95<span>%</span></div>
-    <div class="description">Yetis</div>
-  </li>
-  <li class="bar secondary" style="height: 90%;" title="90">
-    <div class="percent">90<span>%</span></div>
-    <div class="description">ZURBians</div>
-  </li>
-  <li class="bar success" style="height: 80%;" title="80">
-    <div class="percent">80<span>%</span></div>
-    <div class="description">Cows</div>
-  </li>
-  <li class="bar warning" style="height: 75%;" title="75">
-    <div class="percent">75<span>%</span></div>
-    <div class="description">Cows that think they're Yetis</div>
-  </li>
-  <li class="bar alert" style="height: 40%;" title="40">
-    <div class="percent">40<span>%</span></div>
-    <div class="description">Who knows</div>
-  </li>
-</ul>
+<div id="piechart"></div>
 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('neighborhoods', 'Neighborhoods');
+      data.addColumn('number', 'Motivation Level');
+
+      data.addRows([
+        [{v: [8, 0, 0], f: '8 am'}, 1],
+        [{v: [9, 0, 0], f: '9 am'}, 2],
+        [{v: [10, 0, 0], f:'10 am'}, 3],
+        [{v: [11, 0, 0], f: '11 am'}, 4],
+        [{v: [12, 0, 0], f: '12 pm'}, 5],
+        [{v: [13, 0, 0], f: '1 pm'}, 6],
+        [{v: [14, 0, 0], f: '2 pm'}, 7],
+        [{v: [15, 0, 0], f: '3 pm'}, 8],
+        [{v: [16, 0, 0], f: '4 pm'}, 9],
+        [{v: [17, 0, 0], f: '5 pm'}, 10],
+      ]);
+
+      var options = {
+        title: 'Motivation Level Throughout the Day',
+        hAxis: {
+          title: 'Time of Day',
+          format: 'h:mm a',
+          viewWindow: {
+            min: [7, 30, 0],
+            max: [17, 30, 0]
+          }
+        },
+        vAxis: {
+          title: 'Rating (scale of 1-10)'
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
 </script>
 
 </article>
