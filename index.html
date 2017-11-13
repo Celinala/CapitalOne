@@ -109,33 +109,37 @@ var mapOptions = {
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb9StUkkVmmiAlxhMbnBn0_0a295repDM&callback=myMap"></script>
 </p>
 
-<div id="piechart"></div>
+<ul class="bar-graph">
+  <li class="bar-graph-axis">
+    <div class="bar-graph-label">100%</div>
+    <div class="bar-graph-label">80%</div>
+    <div class="bar-graph-label">60%</div>
+    <div class="bar-graph-label">40%</div>
+    <div class="bar-graph-label">20%</div>
+    <div class="bar-graph-label">0%</div>
+  </li>
+  <li class="bar primary" style="height: 95%;" title="95">
+    <div class="percent">95<span>%</span></div>
+    <div class="description">Yetis</div>
+  </li>
+  <li class="bar secondary" style="height: 90%;" title="90">
+    <div class="percent">90<span>%</span></div>
+    <div class="description">ZURBians</div>
+  </li>
+  <li class="bar success" style="height: 80%;" title="80">
+    <div class="percent">80<span>%</span></div>
+    <div class="description">Cows</div>
+  </li>
+  <li class="bar warning" style="height: 75%;" title="75">
+    <div class="percent">75<span>%</span></div>
+    <div class="description">Cows that think they're Yetis</div>
+  </li>
+  <li class="bar alert" style="height: 40%;" title="40">
+    <div class="percent">40<span>%</span></div>
+    <div class="description">Who knows</div>
+  </li>
+</ul>
 
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-<script type="text/javascript">
-// Load google charts
-google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
-
-// Draw the chart and set the chart values
-function drawChart() {
-  var data = google.visualization.arrayToDataTable([
-  ['Neighborhood', 'Popularity'],
-  ['Bayview', 8],
-  ['Marina', 2],
-  ['Chinatown', 4],
-  ['Inner Sunset', 2],
-  ['Mission', 8]
-]);
-
-  // Optional; add a title and set the width and height of the chart
-  var options = {'title':'Popular Neighborhoods', 'width':550, 'height':400};
-
-  // Display the chart inside the <div> element with id="piechart"
-  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-  chart.draw(data, options);
-}
 </script>
 
 </article>
