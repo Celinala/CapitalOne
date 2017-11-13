@@ -91,7 +91,7 @@ article {
 </nav>
 <p id="map">Click the button to get your position.</p>
 
-<button onclick="getLocation()">Try It</button>
+<button onclick="getLocation()">Get Current Location</button>
 
 <div id="mapholder"></div>
 
@@ -109,7 +109,7 @@ function getLocation() {
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
     var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
-    +latlon+"&zoom=14&size=400x300&key=AIzaSyDb9StUkkVmmiAlxhMbnBn0_0a295repDM";
+    +latlon+"&zoom=14&size=400x300&key=AIzaSyDb9StUkkVmmiAlxhMbnBn0_0a295repDM&callback=myMap";
     document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
 }
 
