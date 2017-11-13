@@ -4,13 +4,13 @@
 <style>
 div.container {
     width: 100%;
-    border: 1px solid gray;
+    border: 1px solid grey;
 }
 
 header, footer {
     padding: 1em;
     color: white;
-    background-color: pink;
+    background-color:#311F81;
     clear: left;
     text-align: center;
 }
@@ -44,26 +44,268 @@ article {
 <div class="container">
 
 <header>
-   <h1>City Gallery</h1>
+   <h1>Airbnb Listing</h1>
 </header>
   
 <nav>
   <ul>
-    <li><a href="#">Maria</a></li>
-    <li><a href="#">Dominique</a></li>
-    <li><a href="#">Mary</a></li>
-    <li><a href="#">Almendra</a></li>
-    <li><a href="#">Its Lit</a></li>
+  <h1>Neighborhood</h1>
+    <li><a href="#n1">Bayview</a></li>
+    <li><a href="#n2">Bernal Heights</a></li>
+    <li><a href="#n3">Castro/Upper Market</a></li>
+    <li><a href="#n4">Chinatown</a></li>
+    <li><a href="#n5">Crocker Amazon</a></li>
+    <li><a href="#n6">Diamond Heights</a></li>
+    <li><a href="#n7">Downtown/Civic Center</a></li>
+    <li><a href="#n8">Excelsior</a></li>
+    <li><a href="#n9">Financial District</a></li>
+    <li><a href="#n10">Glen Park</a></li>
+    <li><a href="#n11">Golden Gate Park</a></li>
+    <li><a href="#n12">Haight Ashbury</a></li>
+    <li><a href="#n13">Inner Richmond</a></li>
+    <li><a href="#n14">Inner Sunset</a></li>
+    <li><a href="#n15">Lakeshore</a></li>
+    <li><a href="#n16">Marina</a></li>
+    <li><a href="#n17">Mission</a></li>
+    <li><a href="#n18">Nob Hill</a></li>
+    <li><a href="#n19">Noe Valley</a></li>
+    <li><a href="#n20">North Beach</a></li>
+    <li><a href="#n21">Ocean View</a></li>
+    <li><a href="#n22">Outer Mission</a></li>
+    <li><a href="#n23">Outer Richmond</a></li>
+    <li><a href="#n24">Outer Sunset</a></li>
+    <li><a href="#n25">Pacific Heights</a></li>
+    <li><a href="#n26">Parkside</a></li>
+    <li><a href="#n27">Potrero Hill</a></li>
+    <li><a href="#n28">Presidio</a></li>
+    <li><a href="#n29">Presidio Heights</a></li>
+    <li><a href="#n30">Russian Hill</a></li>
+    <li><a href="#n31">Seacliff</a></li>
+    <li><a href="#n32">South of Market</a></li>
+    <li><a href="#n33">Treasure Island/YBI</a></li>
+    <li><a href="#n34">Twin Peaks</a></li>
+    <li><a href="#n35">Visitacion Valley</a></li>
+    <li><a href="#n36">West of Twin Peaks</a></li>
+    <li><a href="#n37">Western Addition</a></li>
   </ul>
 </nav>
 
 <article>
-  <h1>Celina is Coool</h1>
-  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+<h2 id="n1">Bayview</h2>
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(40.772627, -124.18395),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+  <p>The neighborhood's locally-owned restaurants and DIY collaborative spaces forge the way when it comes to community activism–many of them support Bayview's urban gardening programs and ultra-creative endeavors.</p>
+
 </article>
 
-<footer>Copyright &copy; CELINAAA</footer>
+<article>
+  <h2 id="n2">Bernal Heights</h2>
+  <div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(38.218372, -122.604437),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+  <p></p>
+
+</article>
+
+<article>
+  <h2 id="n3">Castro/Upper Market</h2>
+    <p></p>
+  </article>
+
+<article>
+  <h2 id="n4"> Chinatown</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n5">Crocker Amazon</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n6">Diamond Heights</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n7">Downtown/Civic Center</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n8">Excelsior</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n9">Financial District</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n10">Glen Park</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n11">Golden Gate Park</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n12">Haight Ashbury</h2>
+    <p></p>
+</article>
+
+<article>
+  <h2 id="n13">Inner Richmond</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n14">Inner Sunset</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n15">Lakeshore</h2>
+   <p></p>
+   </article>
+
+<article>
+  <h2 id="n16">Marina</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n17">Mission</h2>
+  <p></p>
+  </article>
+
+<article>
+  <h2 id="n18">Nob Valley</h2>
+   <p></p>
+ </article>
+
+<article>
+  <h2 id="n19">Noe Valley</h2>
+   <p></p>
+   </article>
+
+<article>
+  <h2 id="n20">North Beach</h2>
+    <p></p>
+  </article>
+
+<article>
+  <h2 id="n21">Ocean view</h2>
+    <p></p>
+  </article>
+
+<article>
+  <h2 id="n22">Outer Mission</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n23">Outer Richmond</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n24">Outer Sunset</h2>
+    <p></p>
+  </article>
+
+<article>
+  <h2 id="n25">Pacific Heights</h2>
+    <p></p>
+  </article>
+
+<article>
+  <h2 id="n26">Parkside</h2>
+    <p></p>
+  </article>
+
+<article>
+  <h2 id="n27">Potrero Hill</h2>
+    <p></p>
+  </article>
+
+<article>
+  <h2 id="n28">Presidio</h2>
+    <p></p>
+  </article>
+
+<article>
+  <h2 id="n29">Presidio Heights</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n30">Russian Hill</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n31">Seacliff</h2>
+   <p></p>
+ </article>
+
+<article>
+  <h2 id="n32">South of Market</h2>
+   <p></p>
+   </article>
+
+<article>
+  <h2 id="n33">Treasure Island/YBI</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n34">Twin Peaks</h2>
+  <p></p>
+  </article>
+
+<article>
+  <h2 id="n35">Visitacion Valley</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n36">West of Twin Peaks</h2>
+    <p></p>
+    </article>
+
+<article>
+  <h2 id="n37">Western Addition</h2>
+    <p></p>
+    </article>
+
+<footer>Copyright &copy; Celina</footer>
 
 </div>
 
