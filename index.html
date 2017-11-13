@@ -90,38 +90,24 @@ article {
   </ul>
 </nav>
 
-
-
-
-
-
 <article>
 <h2>San Francisco's Neighborhoods</h2>
-
-
+<div id="map" style="width:400px;height:400px;background:yellow"></div>
 
 <script>
 function myMap() {
-
-	<div id="map" style="width:400px;height:400px;background:yellow"></div>
-
-	<script>
-	function myMap() {
-	var mapOptions = {
+var mapOptions = {
 	    center: new google.maps.LatLng(37.7749, -122.4194),
 	    zoom: 10,
-	    mapTypeId: google.maps.MapTypeId.HYBRID
+	    mapTypeId: google.maps.MapTypeId.TERRAIN
 	}
 	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 	}
 </script>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb9StUkkVmmiAlxhMbnBn0_0a295repDM&callback=myMap"></script>
+
 </article>
-
-
-
-</body>
-</html>
 
 <article>
 <h2 id="n1">Bayview</h2>
