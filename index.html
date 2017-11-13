@@ -90,11 +90,12 @@ article {
   </ul>
 </nav>
 
-<article dir="RTL">
+<article>
+<p align="right">
 <h2>San Francisco's Neighborhoods</h2>
 <div id="map" style="width:400px;height:400px;background:yellow"></div>
 
-<script>
+<script >
 function myMap() {
 var mapOptions = {
 	    center: new google.maps.LatLng(37.7749, -122.4194),
@@ -106,6 +107,8 @@ var mapOptions = {
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDb9StUkkVmmiAlxhMbnBn0_0a295repDM&callback=myMap"></script>
+</p>
+<p align="left">
 <div id="piechart"></div>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -134,6 +137,7 @@ function drawChart() {
   chart.draw(data, options);
 }
 </script>
+</p>
 </article>
 
 <article>
